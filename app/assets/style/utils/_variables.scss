@@ -1,0 +1,40 @@
+/* grid */
+$grid-breakpoints: (
+  xs: 0,
+  mb: 376px,
+  sm: 576px,
+  md: 769px,
+  lg: 992px,
+  xl: 1200px
+);
+
+
+/* font-size */
+$font-size-base: 1rem;
+$font-size: () !default;
+$font-size: map-merge(
+  (
+    'xs': ($font-size-base * 0.75),
+    'sm': ($font-size-base * 0.875),
+    'base': $font-size-base,
+    'lg': ($font-size-base * 1.25),
+    'xl' :($font-size-base * 1.5),
+    '2xl': ($font-size-base * 1.75),
+    '3xl': ($font-size-base * 2),
+    '4xl':($font-size-base * 2.5),
+  ),
+  $font-size
+);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @each $size, $value in $font-size {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+   
+      .text#{$infix}-#{$size} {
+       font-size: $value !important;
+      }
+    }
+    
+  }
+}

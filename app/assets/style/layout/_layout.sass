@@ -1,0 +1,160 @@
+header
+  background-color: #AA0601
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 30px 88px
+  a:hover
+      opacity: 0.7
+.menu
+  display: flex
+  li
+    margin-left: 64px
+    
+@media( max-width: 992px )
+  h2
+    font-size: 32px
+    line-height: 48px
+  header
+    padding: 30px 39px
+  .menu
+    li
+      margin-left: 40px
+@media( max-width: 767px )
+  h2
+    font-size: 24px
+    line-height: 48px
+  header
+    flex-direction: column
+    padding: initial
+  .logo
+    padding: 10px 0
+  .menu
+    width: 100%
+    flex-wrap: wrap
+    li
+      margin-left: 0
+      border: 1px solid #fff
+      width: 50%
+      text-align: center
+      a
+        display: block
+        padding: 8px 0
+
+
+footer
+  padding: 36px 0 40px
+  background-color: #AA0601
+  color: #fff
+  .container
+    text-align: left
+  a:hover
+    opacity: 0.7
+.footer-menu
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  flex-wrap: wrap
+  margin-bottom: 24px
+  border-bottom: 1px solid #fff
+  a
+    display: block
+.footer-menu-list
+  display: flex
+  margin-bottom: 18px
+  li
+    margin-right: 48px
+.footer-menu-icon
+  display: flex
+  li
+    margin-left: 32px
+.footer-menu-info
+  margin-bottom: 5px
+  width: 50%
+  h2
+    font-size: 36px
+    line-height: 54px
+  li
+    margin-bottom: 17px
+    a
+      display: flex
+  img
+    margin-right: 17px
+.footer-copyright
+  display: flex
+  justify-content: space-between
+  align-items: center
+  img
+    margin-right: 38px
+    vertical-align: middle
+  a
+    font-size: 14px
+    line-height: 21px
+  ul
+    display: flex
+.footer-copyright-menu
+  li
+    margin-left: 62px
+@media( max-width: 992px )
+  footer
+    padding: 40px 39px 40px 48px
+  .footer-menu
+    align-items: flex-start
+  .footer-menu-list
+    li
+      margin-right: 40px  
+  .footer-menu-icon
+    li
+      width: 24px
+      margin-left: 24px
+  .footer-menu-info
+    h2
+      font-size: 20px
+      line-height: 30px
+    img
+      width: 24px
+  .footer-copyright
+    img
+      display: none
+    p
+      font-size: 14px
+      line-height: 21px
+  .footer-copyright-menu
+    li
+      margin-left: 24px
+@media( max-width: 767px )
+  footer
+    padding: 25px 15px
+  .footer-menu
+    margin-bottom: 18px
+  .footer-menu-list
+    li
+      display: none
+  .footer-menu-info
+    order: -1
+    margin-bottom: 17px
+    li
+      margin-bottom: 7px
+    img
+      width: 20px
+      margin-right: 4px
+    h2
+      font-size: 16px
+      line-height: 30px
+  .footer-copyright
+    flex-direction: column
+    align-items: start
+    position: relative
+    img
+      display: initial
+      width: 47px
+      margin-right: 0
+  .footer-copyright-text
+    img
+      position: absolute
+      right: 0
+      bottom: 0
+  .footer-copyright-menu
+    flex-direction: column
+    li
+      margin-left: 0
