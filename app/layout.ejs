@@ -6,13 +6,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <header>
-    
-  </header>
+  <nav class="navbar navbar-expand-md fixed-top px-0">
+    <div class="container px-md-0">
+      <div class="logo pl-3 pl-sm-0">
+        <h1><a href="index.html" class="text-decoration-none navbar-brand d-block">D'PERFUME</a></h1>
+      </div>
+      <ul class="navbar-nav ml-auto d-md-none">
+        <li class="nav-item">
+          <a href="#" class="nav-link position-relative">
+            <span class="material-icons align-top">
+              shopping_cart
+            </span>
+            <span class="badge badge-pill badge-danger">3</span>
+          </a>
+        </li>
+      </ul>
+      <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">
+              <span class="material-icons align-top d-none d-md-inline-block">
+                add_business
+              </span>
+              Product
+            </a>
+          </li>
+          <li class="nav-item order-md-2">
+            <a class="nav-link" href="#">
+              <span class="material-icons align-top d-none d-md-inline-block">
+                favorite
+              </span>
+              Wishlist
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-md-none" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-md-none" href="#">Contact</a>
+          </li>
+          <li class="nav-item order-md-1">
+            <a class="nav-link" href="login.html">
+              <span class="material-icons align-top d-none d-md-inline-block">
+                person
+              </span>
+              log in
+            </a>
+          </li>
+          <li class="nav-item order-md-3 d-none d-md-inline-block">
+            <a href="#" class="nav-link">
+              <span class="material-icons align-top">
+                shopping_cart
+              </span>
+              Cart(3)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <%- contents %>
 
