@@ -1,4 +1,5 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
+  // font-size
   @each $size, $value in $font-size {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
@@ -9,6 +10,7 @@
     }
     
   }
+  // line-height
   @each $lh, $value in $line-height {
     @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);

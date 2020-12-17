@@ -5,3 +5,190 @@ engine: ejs
 current: index
 ---
 
+<div class="banner d-lg-flex">
+  <div class="banner-image mb-2 mb-md-4">
+    <img src="./assets/images/index-1.png" class="img-fluid" alt="banner-image">
+  </div>
+  <div class="banner-info">
+    <h2 class="noto-b text-xl text-md-2xl text-lg-3xl mb-1 mb-md-2">寵物服務，盡在 PETPET</h2>
+    <p class="noto-b text-m text-lg-lg mb-3 mb-md-4">當您的毛孩有需要時，<br>幫您找到最合適的服務者！</p>
+    <div class="banner-buttons">
+      <select class="custom-select mb-3" id="inputGroupSelect01" aria-label="Example select with button addon">
+        <option value="" selected disabled>品種</option>
+        <option value="1">狗</option>
+        <option value="2">貓</option>
+      </select>
+      <select class="custom-select mb-3" id="inputGroupSelect02" aria-label="Example select with button addon">
+        <option value="" selected disabled>服務</option>
+        <option value="1">寵物寄宿</option>
+        <option value="2">寵物美容</option>
+        <option value="3">到府照顧</option>
+        <option value="4">溜狗保母</option>
+        <option value="5">行為訓練</option>
+      </select>
+      <select class="custom-select mb-3" id="inputGroupSelect03" aria-label="Example select with button addon">
+        <option value="" selected disabled>地區</option>
+        <option value="1">台北市</option>
+        <option value="2">新北市</option>
+      </select>
+      <button class="btn btn-info w-100 mb-3" type="button">搜尋</button>
+    </div>
+    <span class="arrow material-icons bg-info text-white rounded-circle d-none d-md-inline-block">arrow_drop_down</span>
+  </div>
+</div>
+<div class="container py-7 d-none d-md-block">
+  <h2 class="noto-b text-2xl">本月熱門保姆</h2>
+  <p class="text-m">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./assets/images/index-2.jpeg" class="card-img-top" alt="craousel-image">
+          <div class="card-body text-center px-0">
+            <img src="./assets/images/person-1.png" alt="">
+            <h5 class="card-title noto-m mb-1">Jamie</h5>
+            <p class="card-text mb-2">寄宿、美容、寵物行為訓練</p>
+            <a href="#" class="btn btn-info py-2 px-6 mb-4">預約</a>
+            <ul class="d-flex justify-content-center">
+              <li class="mr-md-5 mr-lg-6">
+                <h6>獲得評價</h6>
+                <p class="text-xl noto-b">198 <small class="text-xs">則</small></p>
+              </li>
+              <li>
+                <h6>已完成訂單</h6>
+                <p class="text-xl noto-b">580 <small class="text-xs">件</small></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./assets/images/index-3.jpeg" class="card-img-top" alt="craousel-image">
+          <div class="card-body text-center px-0">
+            <img src="./assets/images/person-2.png" alt="">
+            <h5 class="card-title noto-m mb-1">Eric</h5>
+            <p class="card-text mb-2">寄宿、美容</p>
+            <a href="#" class="btn btn-info py-2 px-6 mb-4">預約</a>
+            <ul class="d-flex justify-content-center">
+              <li class="mr-md-5 mr-lg-6">
+                <h6>獲得評價</h6>
+                <p class="text-xl noto-b">76 <small class="text-xs">則</small></p>
+              </li>
+              <li>
+                <h6>已完成訂單</h6>
+                <p class="text-xl noto-b">208 <small class="text-xs">件</small></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./assets/images/index-4.jpeg" class="card-img-top" alt="craousel-image">
+          <div class="card-body text-center px-0">
+            <img src="./assets/images/person-3.png" alt="">
+            <h5 class="card-title noto-m mb-1">Yvonne</h5>
+            <p class="card-text mb-2">美容、寵物行為訓練</p>
+            <a href="#" class="btn btn-info py-2 px-6 mb-4">預約</a>
+            <ul class="d-flex justify-content-center">
+              <li class="mr-md-5 mr-lg-6">
+                <h6>獲得評價</h6>
+                <p class="text-xl noto-b">52 <small class="text-xs">則</small></p>
+              </li>
+              <li>
+                <h6>已完成訂單</h6>
+                <p class="text-xl noto-b">196 <small class="text-xs">件</small></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next bg-info">
+      <span class="material-icons">arrow_right</span>
+    </div>
+  </div>
+</div>
+<div class="container py-6 d-block d-md-none">
+  <h2 class="noto-b text-2xl">本月熱門保姆</h2>
+  <p class="text-m">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
+  <div class="card mb-3">
+    <img src="./assets/images/index-2.jpeg" class="card-img-top" alt="craousel-image">
+    <div class="card-body text-center px-0">
+      <img src="./assets/images/person-1.png" alt="">
+      <h5 class="card-title noto-m mb-1">Jamie</h5>
+      <p class="card-text mb-2">寄宿、美容、寵物行為訓練</p>
+      <a href="#" class="btn btn-info py-2 px-6 mb-4">預約</a>
+      <ul class="d-flex justify-content-center">
+        <li class="mr-6">
+          <h6>獲得評價</h6>
+          <p class="text-xl noto-b">198 <small class="text-xs">則</small></p>
+        </li>
+        <li>
+          <h6>已完成訂單</h6>
+          <p class="text-xl noto-b">580 <small class="text-xs">件</small></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card mb-3">
+    <img src="./assets/images/index-3.jpeg" class="card-img-top" alt="craousel-image">
+    <div class="card-body text-center px-0">
+      <img src="./assets/images/person-2.png" alt="">
+      <h5 class="card-title noto-m mb-1">Eric</h5>
+      <p class="card-text mb-2">寄宿、美容</p>
+      <a href="#" class="btn btn-info py-2 px-6 mb-4">預約</a>
+      <ul class="d-flex justify-content-center">
+        <li class="mr-6">
+          <h6>獲得評價</h6>
+          <p class="text-xl noto-b">76 <small class="text-xs">則</small></p>
+        </li>
+        <li>
+          <h6>已完成訂單</h6>
+          <p class="text-xl noto-b">208 <small class="text-xs">件</small></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <img src="./assets/images/index-4.jpeg" class="card-img-top" alt="craousel-image">
+    <div class="card-body text-center px-0">
+      <img src="./assets/images/person-3.png" alt="">
+      <h5 class="card-title noto-m mb-1">Yvonne</h5>
+      <p class="card-text mb-2">美容、寵物行為訓練</p>
+      <a href="#" class="btn btn-info py-2 px-6 mb-4">預約</a>
+      <ul class="d-flex justify-content-center">
+        <li class="mr-6">
+          <h6>獲得評價</h6>
+          <p class="text-xl noto-b">52 <small class="text-xs">則</small></p>
+        </li>
+        <li>
+          <h6>已完成訂單</h6>
+          <p class="text-xl noto-b">196 <small class="text-xs">件</small></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>線上預約</h2>
+  <p>即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
+  <ul class="reservation">
+    <li class="boarding h-100">
+      <h4>寵物寄宿</h4>
+    </li>
+    <li>
+      <a href="#" class="grooming h-100"><h4>寵物美容</h4></a>
+    </li>
+    <li>
+      <a href="#" class="onSite"><h4>到府照顧</h4></a>
+      <a href="#" class="petSitter"><h4>遛狗保姆</h4></a>
+    </li>
+    <li>
+      <a href="#" class="training h-100"><h4>行為訓練</h4></a>
+    </li>
+  </ul>
+</div>
