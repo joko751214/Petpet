@@ -9725,7 +9725,7 @@ img {
           bottom: 0;
           right: 40px;
           font-size: 44px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 376px) {
     .banner {
       padding: 0 15px;
       width: 100%; }
@@ -9749,7 +9749,7 @@ img {
     font-weight: bold;
     color: #fff; }
 
-@media (max-width: 767px) {
+@media (max-width: 376px) {
   .swiper-wrapper {
     display: initial !important; } }
 
@@ -9763,7 +9763,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  @media (max-width: 767px) {
+  @media (max-width: 376px) {
     .reservation {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
@@ -9773,7 +9773,7 @@ img {
   @media (max-width: 992px) {
     .item {
       min-height: 210px; } }
-  @media (max-width: 767px) {
+  @media (max-width: 376px) {
     .item {
       width: 100% !important;
       min-height: 132px;
@@ -9824,14 +9824,14 @@ img {
   height: calc(50% - 4px);
   background: url(../images/index-7.jpeg) no-repeat center;
   margin-bottom: 4px; }
-  @media (max-width: 767px) {
+  @media (max-width: 376px) {
     .onSite {
       height: 132px; } }
 
 .petSitter {
   height: 50%;
   background: url(../images/index-8.jpeg) no-repeat center; }
-  @media (max-width: 767px) {
+  @media (max-width: 376px) {
     .petSitter {
       height: 132px; } }
 
