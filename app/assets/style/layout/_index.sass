@@ -1,18 +1,23 @@
-.item
-  height: 350px
-  margin-right: 6px
-  +tablet()
-    min-height: 132px
+.reservation
+  display: flex
   +iphone()
-    width: 100%
+    flex-wrap: wrap
+.item
+  min-height: 350px
+  +tablet()
+    min-height: 210px
+  +iphone()
+    width: 100% !important
+    min-height: 132px
+    margin-bottom: 4px
   &:nth-child(1)
     width: 31%
   &:nth-child(2)
     width: 28%
   &:nth-child(3)
-    width: 22%
+    width: 23%
   &:nth-child(4)
-    width: 16%
+    width: 18%
   a
     background-size: cover
     position: relative
@@ -38,11 +43,15 @@
 .grooming
   background: url(../images/index-6.jpeg) no-repeat center
 .onSite
-  height: calc(50% - 6px)
-  margin-bottom: 6px
+  height: calc(50% - 4px)
   background: url(../images/index-7.jpeg) no-repeat center
+  margin-bottom: 4px
+  +iphone()
+    height: 132px
 .petSitter
   height: 50%
   background: url(../images/index-8.jpeg) no-repeat center
+  +iphone()
+    height: 132px
 .training
   background: url(../images/index-3.jpeg) no-repeat center
