@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -17,7 +18,7 @@
 <body class="pt-6">
   <nav class="navbar navbar-light navbar-expand-sm fixed-top bg-white px-0">
     <div class="container">
-      <h1 class="ml-7 ml-sm-0 mb-0 text-none">
+      <h1 class="ml-7 ml-sm-0 mb-0 text-none nav-img">
         <a href="index.html">PETPET</a>
       </h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +27,13 @@
       <div class="collapse navbar-collapse text-center" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item border-bottom border-bottom-md-0">
-            <a class="nav-link text-primary text-m text-sm-base lh-4 lh-sm-2 noto-r" href="#">預約服務</a>
+            <a class="nav-link text-primary h5 h6-sm noto-r" href="#">預約服務</a>
           </li>
           <li class="nav-item border-bottom border-bottom-md-0">
-            <a class="nav-link text-primary text-m text-sm-base lh-4 lh-sm-2 noto-r" href="#">成為寵物保姆</a>
+            <a class="nav-link text-primary h5 h6-sm noto-r" href="#">成為寵物保姆</a>
           </li>
           <li class="nav-item border-bottom border-bottom-md-0">
-            <a class="nav-link text-primary text-m text-sm-base lh-4 lh-sm-2 noto-r" href="#">登入</a>
+            <a class="nav-link text-primary h5 h6-sm noto-r" href="#">登入</a>
           </li>
         </ul>
       </div>
@@ -43,9 +44,9 @@
   
   <div class="subcribe bg-warning py-5">
     <div class="container">
-      <h2 class="mb-2 text-lg text-md-3xl lh-5 lh-md-8 noto-b">有任何我們能幫助您的嗎？</h2>
-      <p class="mb-3 text-base text-md-m noto-m">輸入電子信箱<br>將有專業人員在線幫您解決所有問題</p>
-      <div class="input-group mb-3 col-md-9 lh-2 lh-md-4 col-lg-6 p-0">
+      <h2 class="mb-2 h4 h1-md noto-b">有任何我們能幫助您的嗎？</h2>
+      <p class="mb-3 h6 h5-md noto-m">輸入電子信箱<br>將有專業人員在線幫您解決所有問題</p>
+      <div class="input-group mb-3 col-md-9 p-0">
         <input type="mail" class="form-control" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="button-addon2">
         <div class="input-group-append">
           <button class="btn btn-info px-6" type="button" id="button-addon2">送出</button>
@@ -65,7 +66,7 @@
         </ul>
       </li>
       <li class="d-none d-md-block">
-        <h2 class="py-2 mb-5"><a href="#" class="noto-b text-m lh-4">寵物服務</a></h2>
+        <h2 class="py-2 mb-5"><a href="#" class="noto-b h5">寵物服務</a></h2>
         <ul>
           <li class="mb-4"><a href="#" class="noto-r">寵物寄宿</a></li>
           <li class="mb-4"><a href="#" class="noto-r">寵物到府保姆</a></li>
@@ -74,7 +75,7 @@
         </ul>
       </li>
       <li class="d-none d-md-block">
-        <h2 class="py-2 mb-5"><a href="#" class="noto-b text-m lh-4">加入我們</a></h2>
+        <h2 class="py-2 mb-5"><a href="#" class="noto-b h5">加入我們</a></h2>
         <ul>
           <li class="mb-4"><a href="#" class="noto-r">成為寵物保姆</a></li>
           <li class="mb-4"><a href="#" class="noto-r">加入寵物計程車</a></li>
@@ -83,7 +84,7 @@
         </ul>
       </li>
       <li class="d-none d-md-block">
-        <h2 class="py-2 mb-5"><a href="#" class="noto-b text-m lh-4">聯繫我們</a></h2>
+        <h2 class="py-2 mb-5"><a href="#" class="noto-b h5">聯繫我們</a></h2>
         <ul>
           <li><a href="#" class="noto-r">petpet@petmail.com</a></li>
         </ul>
@@ -91,7 +92,7 @@
     </ul>
     <ul class="row justify-content-between mx-0">
       <li class="d-none d-md-block">
-        <p class="text-m lh-4 noto-m">
+        <p class="h5 noto-m">
           <span class="material-icons align-middle mr-2">
             local_phone
           </span>
@@ -99,14 +100,17 @@
         </p>
       </li>
       <li>
-        <p class="text-xs">Copyright © 2020 PetPet. All rights reserved.</p>
+        <p>Copyright © 2020 PetPet. All rights reserved.</p>
       </li>
     </ul>
   </div>
+  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.zh-TW.min.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
 

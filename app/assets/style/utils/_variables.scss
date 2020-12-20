@@ -302,7 +302,7 @@ $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h6-font-size:                $font-size-base * 1 !default;
 
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;
@@ -1151,35 +1151,18 @@ $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
 $font-size: () !default;
 $font-size: map-merge(
   (
-    'xs': ($font-size-base * 0.875),
-    'base': $font-size-base,
-    'm': ($font-size-base * 1.25),
-    'lg': ($font-size-base * 1.5),
-    'xl' :($font-size-base * 1.75),
-    '2xl': ($font-size-base * 2),
-    '3xl': ($font-size-base * 2.5),
-    '4xl':($font-size-base * 3),
+    'h1': $h1-font-size,
+    'h2': $h2-font-size,
+    'h3': $h3-font-size,
+    'h4' : $h4-font-size,
+    'h5': $h5-font-size,
+    'h6': $h6-font-size,
   ),
   $font-size
 );
 
-/* line-height */
-$line-height-default: 1rem;
-$line-height: (
-  0: $line-height-default,
-  1: ($line-height-default*1.25),
-  2: ($line-height-default*1.5),
-  3: ($line-height-default*1.75),
-  4: ($line-height-default*1.875),
-  5: ($line-height-default*2.25),
-  6: ($line-height-default*2.625),
-  7: ($line-height-default*3),
-  8: ($line-height-default*3.75),
-  9: ($line-height-default*4.5),
-);
 
-
-/* font-family */
+/* font-family 最後再來調整*/
 $font-family-noto: 'Noto Sans TC';
 $font-family-roboto: 'Roboto';
 $font-family: (

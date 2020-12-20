@@ -4,10 +4,58 @@ layout: ./app/layout.ejs
 engine: ejs
 current: boarding
 ---
-
-<div class="container py-7">
-  <h2 class="noto-b text-2xl">本月熱門寄宿</h2>
-  <p class="text-m">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
+<div class="container py-0 py-md-6">
+  <div class="row align-items-center flex-md-row-reverse">
+    <div class="col-md-7 col-lg-8 px-0 px-md-3">
+      <img src="./assets/images/homestay-1.png" class="w-100" alt="homestay-image" style="height: 315px;">
+    </div>
+    <div class="col-md-5 col-lg-4 text-center text-md-left mt-3 mt-md-0">
+      <h2 class="h1-md noto-b h3">寵物寄宿</h2>
+      <p class="h5 h4-md mt-3 noto-b">給您的毛孩最舒適的環境</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row no-gutters">
+    <div class="col-3 col-md-2 col-lg-1">
+      <select class="custom-select" id="inputGroupSelect01" aria-label="Example select with button addon">
+        <option value="" selected disabled>品種</option>
+        <option value="1">狗</option>
+        <option value="2">貓</option>
+      </select>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2">
+      <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+        <option value="" selected disabled>地區</option>
+        <option value="1">台北市</option>
+        <option value="2">新北市</option>
+        <option value="3">高雄市</option>
+      </select>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2">
+      <div class="form-group">
+        <div class='input-group date' id='fromDate'>
+          <input type='text' class="form-control" />
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-calendar"></span>
+           </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2">
+      <div class="form-group">
+        <div class='input-group date' id='toDate'>
+          <input type='text' class="form-control" />
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-calendar"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container py-6 py-md-7">
+  <h2 class="noto-b h2">本月熱門寄宿</h2>
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="card swiper-slide mb-2 mb-md-0">
@@ -20,11 +68,13 @@ current: boarding
           <ul class="d-flex justify-content-center">
             <li class="mr-md-5 mr-lg-6">
               <h6>獲得評價</h6>
-              <p class="text-xl noto-b">198 <small class="text-xs">則</small></p>
+              <p class="h3 noto-b d-inline-block">198</p>
+              <small>則</small>
             </li>
             <li>
               <h6>已完成訂單</h6>
-              <p class="text-xl noto-b">580 <small class="text-xs">件</small></p>
+              <p class="h3 noto-b d-inline-block">580</p>
+              <small class="p">件</small>
             </li>
           </ul>
         </div>
@@ -39,11 +89,13 @@ current: boarding
           <ul class="d-flex justify-content-center">
             <li class="mr-md-5 mr-lg-6">
               <h6>獲得評價</h6>
-              <p class="text-xl noto-b">76 <small class="text-xs">則</small></p>
+              <p class="h3 noto-b d-inline-block">76</p>
+              <small class="p">則</small>
             </li>
             <li>
               <h6>已完成訂單</h6>
-              <p class="text-xl noto-b">208 <small class="text-xs">件</small></p>
+              <p class="h3 noto-b d-inline-block">208</p>
+              <small class="p">件</small>
             </li>
           </ul>
         </div>
@@ -58,11 +110,13 @@ current: boarding
           <ul class="d-flex justify-content-center">
             <li class="mr-md-5 mr-lg-6">
               <h6>獲得評價</h6>
-              <p class="text-xl noto-b">52 <small class="text-xs">則</small></p>
+              <p class="h3 noto-b d-inline-block">52</p>
+              <small class="p">則</small>
             </li>
             <li>
               <h6>已完成訂單</h6>
-              <p class="text-xl noto-b">196 <small class="text-xs">件</small></p>
+              <p class="h3 noto-b d-inline-block">196</p>
+              <small class="p">件</small>
             </li>
           </ul>
         </div>

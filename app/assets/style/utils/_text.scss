@@ -4,20 +4,10 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
    
-      .text#{$infix}-#{$size} {
+      .#{$size}#{$infix} {
        font-size: $value !important;
       }
     }
     
-  }
-  // line-height
-  @each $lh, $value in $line-height {
-    @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-    
-      .lh#{$infix}-#{$lh} {
-        line-height: $value !important;
-      }
-    }
   }
 };
