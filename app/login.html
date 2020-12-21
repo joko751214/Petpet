@@ -1,0 +1,50 @@
+---
+title: 登入頁面
+layout: ./app/layout.ejs
+engine: ejs
+current: login
+---
+
+<div class="row align-items-center pt-6 pt-md-10 pt-lg-0 mx-0">
+  <div class="d-none d-lg-block">
+    <img src="./assets/images/index-1.png" class="img-fluid" alt="banner-image">
+  </div>
+  <form class="col-12 offset-md-2 col-md-8 col-lg-6 ml-lg-3 pr-lg-0">
+    <h2 class="mb-6 noto-b">登入</h2>
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="text-dark noto-r">電子信箱</label>
+      <input type="email" class="form-control roboto-r" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+    </div>
+    <div class="form-group mb-1">
+      <label for="exampleInputPassword1" class="text-dark noto-r">密碼</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入密碼">
+    </div>
+    <small>
+      <a href="#" class="mb-3 text-muted">忘記密碼</a>
+    </small>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input position-relative" id="exampleCheck1">
+      <label class="form-check-label text-dark" for="exampleCheck1">記住我的帳號</label>
+    </div>
+    <div class="form-row text-center align-items-center mb-5">
+      <div class="col-12 col-lg-6 py-1">
+        <a href="#" class="border text-muted roboto-r">
+          <img src="./assets/images/facebook.svg" alt="icon">
+          Facebook
+        </a>
+      </div>
+      <div class="col-12 col-lg-6 py-1">
+        <a href="#" class="border text-muted roboto-r">
+          <img src="./assets/images/google.svg" alt="icon">
+          Google
+        </a>
+      </div>
+    </div>
+    <div class="form-row mx-0 mb-2">
+      <div class="col-12 col-lg-3 px-0">
+        <a href="member.html" class="btn btn-info w-100 noto-r">登入</a>
+      </div>
+    </div>
+    <a href="#" class="text-info noto-r">還沒註冊嗎？</a>
+  </form>
+</div>
