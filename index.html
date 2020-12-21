@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首頁</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -17,7 +18,7 @@
 <body class="pt-6">
   <nav class="navbar navbar-light navbar-expand-sm fixed-top bg-white px-0">
     <div class="container">
-      <h1 class="ml-7 ml-sm-0 mb-0 text-none">
+      <h1 class="ml-7 ml-sm-0 mb-0 text-none nav-img">
         <a href="index.html">PETPET</a>
       </h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +27,13 @@
       <div class="collapse navbar-collapse text-center" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item border-bottom border-bottom-md-0">
-            <a class="nav-link text-primary text-m text-sm-base lh-4 lh-sm-2 noto-r" href="#">預約服務</a>
+            <a class="nav-link text-primary h5 h6-sm noto-r" href="#">預約服務</a>
           </li>
           <li class="nav-item border-bottom border-bottom-md-0">
-            <a class="nav-link text-primary text-m text-sm-base lh-4 lh-sm-2 noto-r" href="#">成為寵物保姆</a>
+            <a class="nav-link text-primary h5 h6-sm noto-r" href="#">成為寵物保姆</a>
           </li>
           <li class="nav-item border-bottom border-bottom-md-0">
-            <a class="nav-link text-primary text-m text-sm-base lh-4 lh-sm-2 noto-r" href="#">登入</a>
+            <a class="nav-link text-primary h5 h6-sm noto-r" href="login.html"">登入</a>
           </li>
         </ul>
       </div>
@@ -45,8 +46,8 @@
     <img src="./assets/images/index-1.png" class="img-fluid" alt="banner-image">
   </div>
   <div class="banner-info">
-    <h2 class="noto-b text-xl text-md-2xl text-lg-3xl mb-1 mb-md-2">寵物服務，盡在 PETPET</h2>
-    <p class="noto-b text-m text-lg-lg mb-3 mb-md-4">當您的毛孩有需要時，<br>幫您找到最合適的服務者！</p>
+    <h2 class="noto-b h3-xl h2-md h1-lg mb-1 mb-md-2">寵物服務，盡在 PETPET</h2>
+    <p class="noto-b h5-m h4-lg mb-3 mb-md-4">當您的毛孩有需要時，<br>幫您找到最合適的服務者！</p>
     <div class="banner-buttons">
       <select class="custom-select mb-3" id="inputGroupSelect01" aria-label="Example select with button addon">
         <option value="" selected disabled>品種</option>
@@ -65,32 +66,35 @@
         <option value="" selected disabled>地區</option>
         <option value="1">台北市</option>
         <option value="2">新北市</option>
+        <option value="3">高雄市</option>
       </select>
       <button class="btn btn-info w-100 mb-3" type="button">搜尋</button>
     </div>
     <span class="arrow material-icons bg-info text-white rounded-circle d-none d-md-inline-block">arrow_drop_down</span>
   </div>
 </div>
-<div class="container py-7">
-  <h2 class="noto-b text-2xl">本月熱門保姆</h2>
-  <p class="text-m">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
+<div class="container py-6 py-md-7">
+  <h2 class="noto-b h2">本月熱門保姆</h2>
+  <p class="h5">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="card swiper-slide mb-2 mb-md-0">
         <img src="./assets/images/index-2.jpeg" class="card-img-top" alt="craousel-image">
         <div class="card-body text-center px-0">
-          <img src="./assets/images/person-1.png" alt="">
+          <img src="./assets/images/person-1.png" class="card-body-img" alt="">
           <h5 class="card-title noto-m mb-1">Jamie</h5>
           <p class="card-text mb-2">寄宿、美容、寵物行為訓練</p>
           <a href="#" class="btn btn-info py-2 px-6 mb-4">預約</a>
           <ul class="d-flex justify-content-center">
             <li class="mr-md-5 mr-lg-6">
               <h6>獲得評價</h6>
-              <p class="text-xl noto-b">198 <small class="text-xs">則</small></p>
+              <p class="h3 noto-b d-inline-block">198</p>
+              <small>則</small>
             </li>
             <li>
               <h6>已完成訂單</h6>
-              <p class="text-xl noto-b">580 <small class="text-xs">件</small></p>
+              <p class="h3 noto-b d-inline-block">580</p>
+              <small>件</small>
             </li>
           </ul>
         </div>
@@ -98,18 +102,20 @@
       <div class="card swiper-slide mb-2 mb-md-0">
         <img src="./assets/images/index-3.jpeg" class="card-img-top" alt="craousel-image">
         <div class="card-body text-center px-0">
-          <img src="./assets/images/person-2.png" alt="">
+          <img src="./assets/images/person-2.png" class="card-body-img" alt="">
           <h5 class="card-title noto-m mb-1">Eric</h5>
           <p class="card-text mb-2">寄宿、美容</p>
           <a href="#" class="btn btn-info py-2 px-6 mb-4">預約</a>
           <ul class="d-flex justify-content-center">
             <li class="mr-md-5 mr-lg-6">
               <h6>獲得評價</h6>
-              <p class="text-xl noto-b">76 <small class="text-xs">則</small></p>
+              <p class="h3 noto-b d-inline-block">76</p>
+              <small>則</small>
             </li>
             <li>
               <h6>已完成訂單</h6>
-              <p class="text-xl noto-b">208 <small class="text-xs">件</small></p>
+              <p class="h3 noto-b d-inline-block">208</p>
+              <small>件</small>
             </li>
           </ul>
         </div>
@@ -117,18 +123,20 @@
       <div class="card swiper-slide mb-2 mb-md-0">
         <img src="./assets/images/index-4.jpeg" class="card-img-top" alt="craousel-image">
         <div class="card-body text-center px-0">
-          <img src="./assets/images/person-3.png" alt="">
+          <img src="./assets/images/person-3.png" class="card-body-img" alt="">
           <h5 class="card-title noto-m mb-1">Yvonne</h5>
           <p class="card-text mb-2">美容、寵物行為訓練</p>
           <a href="#" class="btn btn-info py-2 px-6 mb-4">預約</a>
           <ul class="d-flex justify-content-center">
             <li class="mr-md-5 mr-lg-6">
               <h6>獲得評價</h6>
-              <p class="text-xl noto-b">52 <small class="text-xs">則</small></p>
+              <p class="h3 noto-b d-inline-block">52</p>
+              <small>則</small>
             </li>
             <li>
               <h6>已完成訂單</h6>
-              <p class="text-xl noto-b">196 <small class="text-xs">件</small></p>
+              <p class="h3 noto-b d-inline-block">196</p>
+              <small>件</small>
             </li>
           </ul>
         </div>
@@ -139,12 +147,12 @@
     </div>
   </div>
 </div>
-<div class="container py-7">
+<div class="container pb-5 pb-md-7">
   <h2 class="noto-b">線上預約</h2>
   <p class="noto-m">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
   <ul class="reservation">
     <li class="item mr-1">
-      <a href="boarding.html" class="boarding h-100 noto-b bg-cover"><h4>寵物寄宿</h4></a>
+      <a href="service.html" class="boarding h-100 noto-b bg-cover"><h4>寵物寄宿</h4></a>
     </li>
     <li class="item mr-1">
       <a href="#" class="grooming h-100 noto-b bg-cover"><h4>寵物美容</h4></a>
@@ -160,49 +168,50 @@
     </li>
   </ul>
 </div>
-<div class="jumbotron jumbotron-fluid pt-6 pt-md-7 pb-9 mb-0 bg-cover">
+<div class="jumbotron jumbotron-fluid pt-6 pt-md-7 pb-5 pb-md-9 mb-0 bg-cover">
   <div class="container text-white">
-    <h2 class="mb-8 text-3xl">PETPET目前已有</h2>
+    <h2 class="mb-8 h1">PETPET目前已有</h2>
     <ul class="d-flex flex-column flex-md-row align-items-center">
       <li class="px-3 pb-3 pb-md-7 border-left border-white mr-0 mr-md-9 mb-7 mb-md-0">
-        <h3 class="noto-b text-4xl lh-9">5278</h3>
-        <p class="noto-m text-m">人使用 PETPET</p>
+        <h3 class="noto-b h1 lh-9">5278</h3>
+        <p class="noto-m h5">人使用 PETPET</p>
       </li>
       <li class="px-3 pb-3 pb-md-7 border-left border-white mr-0 mr-md-9 mb-7 mb-md-0">
-        <h3 class="noto-b text-4xl lh-9">580</h3>
-        <p class="noto-m text-m">人成為寵物保母</p>
+        <h3 class="noto-b h1 lh-9">580</h3>
+        <p class="noto-m h5">人成為寵物保母</p>
       </li>
       <li class="px-3 pb-3 pb-md-7 border-left border-white mr-0 mr-md-9 mb-7 mb-md-0">
-        <h3 class="noto-b text-4xl lh-9">10000+</h3>
-        <p class="noto-m text-m">已完成服務</p>
+        <h3 class="noto-b h1 lh-9">10000+</h3>
+        <p class="noto-m h5">已完成服務</p>
       </li>
     </ul>
   </div>
 </div>
 <div class="container py-5 py-md-7">
-  <h2 class="noto-b text-2xl">預約流程</h2>
-  <p class="noto-m text-m">輕鬆三步驟，立即獲取最佳服務！</p>
+  <h2 class="noto-b h2">預約流程</h2>
+  <p class="noto-m h5">輕鬆三步驟，立即獲取最佳服務！</p>
   <ul class="d-block d-md-flex">
     <li class="mr-0 mr-md-5 mb-5 mb-md-0">
-      <h3 class="noto-m text-m">1.查詢想要的服務</h3>
+      <h3 class="noto-m h5">1.查詢想要的服務</h3>
       <a href="#"><img class="w-100" src="./assets/images/index-10.png" alt="process-image"></a>
     </li>
     <li class="mr-0 mr-md-5 mb-5 mb-md-0">
-      <h3 class="noto-m text-m">2.找到合適的保姆</h3>
+      <h3 class="noto-m h5">2.找到合適的保姆</h3>
       <a href="#"><img class="w-100" src="./assets/images/index-11.png" alt="process-image"></a>
     </li>
     <li class="mr-0 mr-md-5 mb-5 mb-md-0">
-      <h3 class="noto-m text-m">3.填寫資料完成預約</h3>
+      <h3 class="noto-m h5">3.填寫資料完成預約</h3>
       <a href="#"><img class="w-100" src="./assets/images/index-12.png" alt="process-image"></a>
     </li>
   </ul>
 </div>
   
+  
   <div class="subcribe bg-warning py-5">
     <div class="container">
-      <h2 class="mb-2 text-lg text-md-3xl lh-5 lh-md-8 noto-b">有任何我們能幫助您的嗎？</h2>
-      <p class="mb-3 text-base text-md-m noto-m">輸入電子信箱<br>將有專業人員在線幫您解決所有問題</p>
-      <div class="input-group mb-3 col-md-9 lh-2 lh-md-4 col-lg-6 p-0">
+      <h2 class="mb-2 h4 h1-md noto-b">有任何我們能幫助您的嗎？</h2>
+      <p class="mb-3 h6 h5-md noto-m">輸入電子信箱<br>將有專業人員在線幫您解決所有問題</p>
+      <div class="input-group mb-3 col-md-9 p-0">
         <input type="mail" class="form-control" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="button-addon2">
         <div class="input-group-append">
           <button class="btn btn-info px-6" type="button" id="button-addon2">送出</button>
@@ -210,11 +219,11 @@
       </div>
     </div>
   </div>
-  <div class="container pt-6">
+  <div class="container py-2 pt-md-6">
     <ul class="row justify-content-between mx-0 mb-0 mb-md-8">
       <li>
-        <h2 class="text-none mb-0 mb-md-4"><a href="#">PETPET</a></h2>
-        <ul class="d-none d-md-block">
+        <h2 class="nav-img text-none mb-0 mb-md-4"><a href="#">PETPET</a></h2>
+        <ul class="d-none d-md-block pt-1">
           <li class="mb-4"><a href="#" class="noto-r">關於我們</a></li>
           <li class="mb-4"><a href="#" class="noto-r">幫助中心</a></li>
           <li class="mb-4"><a href="#" class="noto-r">使用條款</a></li>
@@ -222,7 +231,7 @@
         </ul>
       </li>
       <li class="d-none d-md-block">
-        <h2 class="py-2 mb-5"><a href="#" class="noto-b text-m lh-4">寵物服務</a></h2>
+        <h2 class="py-2 mb-5"><a href="#" class="noto-b h5">寵物服務</a></h2>
         <ul>
           <li class="mb-4"><a href="#" class="noto-r">寵物寄宿</a></li>
           <li class="mb-4"><a href="#" class="noto-r">寵物到府保姆</a></li>
@@ -231,7 +240,7 @@
         </ul>
       </li>
       <li class="d-none d-md-block">
-        <h2 class="py-2 mb-5"><a href="#" class="noto-b text-m lh-4">加入我們</a></h2>
+        <h2 class="py-2 mb-5"><a href="#" class="noto-b h5">加入我們</a></h2>
         <ul>
           <li class="mb-4"><a href="#" class="noto-r">成為寵物保姆</a></li>
           <li class="mb-4"><a href="#" class="noto-r">加入寵物計程車</a></li>
@@ -240,7 +249,7 @@
         </ul>
       </li>
       <li class="d-none d-md-block">
-        <h2 class="py-2 mb-5"><a href="#" class="noto-b text-m lh-4">聯繫我們</a></h2>
+        <h2 class="py-2 mb-5"><a href="#" class="noto-b h5">聯繫我們</a></h2>
         <ul>
           <li><a href="#" class="noto-r">petpet@petmail.com</a></li>
         </ul>
@@ -248,7 +257,7 @@
     </ul>
     <ul class="row justify-content-between mx-0">
       <li class="d-none d-md-block">
-        <p class="text-m lh-4 noto-m">
+        <p class="h5 noto-m">
           <span class="material-icons align-middle mr-2">
             local_phone
           </span>
@@ -256,14 +265,18 @@
         </p>
       </li>
       <li>
-        <p class="text-xs">Copyright © 2020 PetPet. All rights reserved.</p>
+        <p>Copyright © 2020 PetPet. All rights reserved.</p>
       </li>
     </ul>
   </div>
+  
+  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.zh-TW.min.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
 
