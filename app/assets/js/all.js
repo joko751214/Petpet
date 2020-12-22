@@ -64,33 +64,3 @@ function checkWindowSize(){
 
 checkWindowSize();
 /* swiper settings end */
-
-
-/* datepicker */ 
-$(function () {
-  $("#fromDate").datepicker({
-    format: "yyyy-mm-dd",
-    autoclose: true,
-    startDate: "today",
-    todayHighlight: true
-  });
-  $("#toDate").datepicker({
-    format: "yyyy-mm-dd",
-    autoclose: true,
-    startDate: "today",
-  });
-  $("#fromDate").on("changeDate", function (e) {
-    $('#toDate').datepicker('setStartDate', e.date);
-  });
-  $("#toDate").on("changeDate", function (e) {
-    $('#fromDate').datepicker('setEndDate', e.date);
-  });
-});
-
-
-/* carousel */
-$(".carousel--inner a").click(function(e) {
-  e.preventDefault();
-  const src = $(this).find("img").attr('src');
-  $(".carousel--item-actice img").attr('src', src);
-})
