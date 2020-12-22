@@ -318,14 +318,15 @@ current: detail
 </div>
 
 <!-- Modal -->
+
 <div class="reserve-modal" id="modal">
-  <!-- <div class="container py-5 py-md-6">
-    <div class="row"> -->
-      <div class="offset-lg-1 col-lg-10 bg-white py-6 px-5 mt-6" id="modal-item">
+  <div class="container py-5 py-md-6">
+    <div class="row">
+      <div class="offset-lg-1 col-lg-10 py-6 px-5 mt-6" id="modal-item">
         <h2 class="h4">預約項目</h2>
       </div>
-    <!-- </div>
-  </div> -->
+    </div>
+  </div>
 </div>
 
 <script type="module">
@@ -341,17 +342,14 @@ current: detail
     // console.log(e);
     e.preventDefault();
     // $("#modal").addClass('show');
+    $('body').append("<div class='greybackground'></div>")
     $("#modal").toggle();
   })
-  $("#modal-item").click(function(e) {
-    e.preventDefault();
-    console.log(e.target.parentNode)
-    console.log($(this).parent()[0])
-    if(e.target.parentNode === $(this).parent()[0]) {
-      return
-    }else {
-      $("#modal").toggle();
-    }
+  $("body").on('click', '.greybackground', function() {
+    // e.preventDefault();
+    $("#modal").toggle();
+    $(this).remove();
+    // console.log(e.target.parentNode);
     // console.log($("#modal-item"));
     // $("#modal").toggle();
   })
