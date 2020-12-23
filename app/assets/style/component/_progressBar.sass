@@ -1,0 +1,20 @@
+.progress--bar
+  border-top: 2px solid #DA3A1A
+  li
+    color: rgba(0,0,0,.7)
+    position: relative
+    p
+      padding-top: 4px
+      &.active
+        color: #000
+        font-weight: 700
+      &:before
+        content: ""
+        width: 8px
+        height: 8px
+        background-color: #DA3A1A
+        border-radius: 50%
+        display: block
+        position: absolute
+        top: -5px
+        left: 50%

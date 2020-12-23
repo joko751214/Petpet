@@ -37,7 +37,7 @@ current: detail
           <p>到府保姆 NT$ 550 /晚</p>
         </li>
         <li class="d-flex align-items-start">
-          <span class="material-icons mr-2">place</span>
+          <span class="material-icons mr-2 text-info">place</span>
           <p class="mb-0">高雄市鹽埕區七賢三路123號<br>服務區域：高雄市 全區</p>
         </li>
       </ul>
@@ -318,12 +318,226 @@ current: detail
 </div>
 
 <!-- Modal -->
-
-<div class="reserve-modal" id="modal">
-  <div class="container py-5 py-md-6">
-    <div class="row">
-      <div class="offset-lg-1 col-lg-10 py-6 px-5 mt-6" id="modal-item">
-        <h2 class="h4">預約項目</h2>
+<div class="reserve-modal container mt-5 py-md-5" id="modal">
+  <div class="row mx-0 bg-white px-3 px-md-6 px-lg-5 py-4 pt-md-6 pb-md-3 pb-lg-5 flex-column flex-lg-row" data-index='0'>
+    <ul class="progress--bar d-flex justify-content-around order-md-1 order-lg-2 col-lg-8">
+      <li>
+        <p class="active">預約項目</p>
+      </li>
+      <li>
+        <p>預約資料</p>
+      </li>
+      <li>
+        <p>付款資訊</p>
+      </li>
+    </ul>
+    <h2 class="h4 noto-b mb-3 mb-lg-5 text-primary col-lg-8 px-0">預約項目</h2>
+    <div class="px-0 offset-lg-7 col-lg-5 d-flex d-lg-block mb-4 align-items-center position-sm-relative position-absolute pl-lg-6">
+      <img src="./assets/images/homestay-3.jpeg" class="modal-image" alt="modal-image">
+      <div class="modal--text d-lg-flex flex-wrap mt-lg-3">
+        <h3 class="h5 text-primary mr-lg-3">毛孩好家</h3>
+        <div class="ratings">
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+        </div>
+        <div class="d-flex align-items-start mt-lg-3">
+          <span class="material-icons mr-2 text-info">place</span>
+          <p class="text-primary">高雄市苓雅區、新興區、前鎮區</p>
+        </div>
+      </div>
+    </div>
+    <ul class="d-flex mb-4 col-lg-8 px-0">
+      <li class="modal-button active">
+        <a href="#" class="modal-link d-block">
+          <span class="material-icons">house</span>
+          <p>寄宿</p>
+        </a>
+      </li>
+      <li class="modal-button">
+        <a href="#" class="modal-link d-block">
+          <span class="material-icons">wash</span>
+          <p>美容</p>
+        </a>
+      </li>
+      <li class="modal-button">
+        <a href="#" class="modal-link d-block">
+          <span class="material-icons">roofing</span>
+          <p>到府保姆</p>
+        </a>
+      </li>
+      <li class="modal-button">
+        <a href="#" class="modal-link d-block">
+          <span class="material-icons">directions_walk</span>
+          <p>遛狗保姆</p>
+        </a>
+      </li>
+    </ul>
+    <form class="col-lg-8 px-0">
+      <h6 class="h6">選擇日期</h6>
+      <div class="row mb-4">
+        <div class='input-group date mb-3 mb-md-0 col-10 col-md-5' id='fromDate'>
+          <input type='text' class="form-control rounded"/>
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-calendar"></span>
+          </span>
+        </div>
+        <p>至</p>
+        <div class='input-group date col-10 col-md-5' id='toDate'>
+          <input type='text' class="form-control rounded"/>
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-calendar"></span>
+          </span>
+        </div>
+        <p>共1晚</p>
+      </div>
+      <div class="row mb-5 mb-md-7">
+        <div class="col-4 col-md-2 col-lg-3 pr-0 pr-md-3">
+          <h6>毛孩數量</h6>
+          <select class="custom-select" id="detailGroupt01" aria-label="Example select with button addon">
+            <option value="" selected disabled>數量</option>
+            <option value="1">1隻</option>
+            <option value="2">2隻</option>
+            <option value="3">3隻</option>
+          </select>
+        </div>
+        <div class="col-4 col-md-3 col-lg-3 pr-0 pr-md-3">
+          <h6>您的毛孩是</h6>
+          <select class="custom-select" id="detailGroupt02" aria-label="Example select with button addon">
+            <option value="" selected disabled>品種</option>
+            <option value="1">貓</option>
+            <option value="2">狗</option>
+          </select>
+        </div>
+        <div class="col-4 col-md-3 col-lg-3">
+          <h6>年齡</h6>
+          <select class="custom-select" id="detailGroupt03" aria-label="Example select with button addon">
+            <option value="" selected disabled>年齡</option>
+            <option value="1">1~5歲</option>
+            <option value="2">5~10歲</option>
+          </select>
+        </div>
+      </div>
+    </form>
+    <div class="col-lg-4 order-md-2 order-lg-3">
+      <div class="col-12 mb-2 d-block d-md-none">
+        <a href="#" class="text-info d-block text-center" id="prev-button">返回</a>
+      </div>
+      <div class="col-12 col-md-5 col-lg-12 offset-md-7 offset-lg-0 mt-md-4 mt-lg-0">
+        <a href="#" class="btn btn-info d-block next-button">下一步</a>
+      </div>
+    </div>
+  </div>
+  <div class="row mx-0 bg-white px-3 px-md-6 px-lg-5 py-4 pt-md-6 pb-md-3 pb-lg-5 flex-column flex-lg-row" data-index='1'>
+    <ul class="progress--bar d-flex justify-content-around order-md-1 order-lg-2 col-lg-8">
+      <li>
+        <p class="active">預約項目</p>
+      </li>
+      <li>
+        <p>預約資料</p>
+      </li>
+      <li>
+        <p>付款資訊</p>
+      </li>
+    </ul>
+    <h2 class="h4 noto-b mb-3 mb-lg-5 text-primary col-lg-8 px-0">預約項目</h2>
+    <div class="px-0 offset-lg-7 col-lg-5 d-flex d-lg-block mb-4 align-items-center position-sm-relative position-absolute pl-lg-6">
+      <img src="./assets/images/homestay-3.jpeg" class="modal-image" alt="modal-image">
+      <div class="modal--text d-lg-flex flex-wrap mt-lg-3">
+        <h3 class="h5 text-primary mr-lg-3">毛孩好家</h3>
+        <div class="ratings">
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+        </div>
+        <div class="d-flex align-items-start mt-lg-3">
+          <span class="material-icons mr-2 text-info">place</span>
+          <p class="text-primary">高雄市苓雅區、新興區、前鎮區</p>
+        </div>
+      </div>
+    </div>
+    <ul class="d-flex mb-4 col-lg-8 px-0">
+      <li class="modal-button active">
+        <a href="#" class="modal-link d-block">
+          <span class="material-icons">house</span>
+          <p>寄宿</p>
+        </a>
+      </li>
+      <li class="modal-button">
+        <a href="#" class="modal-link d-block">
+          <span class="material-icons">wash</span>
+          <p>美容</p>
+        </a>
+      </li>
+      <li class="modal-button">
+        <a href="#" class="modal-link d-block">
+          <span class="material-icons">roofing</span>
+          <p>到府保姆</p>
+        </a>
+      </li>
+      <li class="modal-button">
+        <a href="#" class="modal-link d-block">
+          <span class="material-icons">directions_walk</span>
+          <p>遛狗保姆</p>
+        </a>
+      </li>
+    </ul>
+    <form class="col-lg-8 px-0">
+      <h6 class="h6">選擇日期</h6>
+      <div class="row mb-4">
+        <div class='input-group date mb-3 mb-md-0 col-10 col-md-5' id='fromDate'>
+          <input type='text' class="form-control rounded"/>
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-calendar"></span>
+          </span>
+        </div>
+        <p>至</p>
+        <div class='input-group date col-10 col-md-5' id='toDate'>
+          <input type='text' class="form-control rounded"/>
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-calendar"></span>
+          </span>
+        </div>
+        <p>共1晚</p>
+      </div>
+      <div class="row mb-5 mb-md-7">
+        <div class="col-4 col-md-2 col-lg-3 pr-0 pr-md-3">
+          <h6>毛孩數量</h6>
+          <select class="custom-select" id="detailGroupt01" aria-label="Example select with button addon">
+            <option value="" selected disabled>數量</option>
+            <option value="1">1隻</option>
+            <option value="2">2隻</option>
+            <option value="3">3隻</option>
+          </select>
+        </div>
+        <div class="col-4 col-md-3 col-lg-3 pr-0 pr-md-3">
+          <h6>您的毛孩是</h6>
+          <select class="custom-select" id="detailGroupt02" aria-label="Example select with button addon">
+            <option value="" selected disabled>品種</option>
+            <option value="1">貓</option>
+            <option value="2">狗</option>
+          </select>
+        </div>
+        <div class="col-4 col-md-3 col-lg-3">
+          <h6>年齡</h6>
+          <select class="custom-select" id="detailGroupt03" aria-label="Example select with button addon">
+            <option value="" selected disabled>年齡</option>
+            <option value="1">1~5歲</option>
+            <option value="2">5~10歲</option>
+          </select>
+        </div>
+      </div>
+    </form>
+    <div class="col-lg-4 order-md-2 order-lg-3">
+      <div class="col-12 mb-2 d-block d-md-none">
+        <a href="#" class="text-info d-block text-center" id="prev-button">返回</a>
+      </div>
+      <div class="col-12 col-md-5 col-lg-12 offset-md-7 offset-lg-0 mt-md-4 mt-lg-0">
+        <a href="#" class="btn btn-info d-block next-button">下一步</a>
       </div>
     </div>
   </div>
@@ -338,19 +552,87 @@ current: detail
   });
 
   /* modal */
+  // page initial value
+  var i = 0;
+  const modal = $("#modal");
+  const childrens = modal[0];
+
   $("#modal-btn").click(function(e) {
-    // console.log(e);
     e.preventDefault();
-    // $("#modal").addClass('show');
+    // 在body裡面加入灰色背景
     $('body').append("<div class='greybackground'></div>")
-    $("#modal").toggle();
-  })
+    // 開啟modal
+    modal.fadeIn('slow');
+    checkIndex();
+  });
+
   $("body").on('click', '.greybackground', function() {
-    // e.preventDefault();
-    $("#modal").toggle();
-    $(this).remove();
-    // console.log(e.target.parentNode);
-    // console.log($("#modal-item"));
-    // $("#modal").toggle();
-  })
+    // 關閉modal
+    modal.fadeOut('slow');
+    // 刪除灰色背景，不刪除的話一但開啟多次就會重複多了很多行
+    removeGreyBackground();
+  });
+
+  // prev button
+  $("#prev-button").click(function(e) {
+    e.preventDefault();
+    modal.fadeOut('slow');
+    removeGreyBackground();
+  });
+
+  // next button
+  $(".next-button").click(function(e) {
+    i+=1;
+    checkIndex()
+    e.preventDefault();
+    console.log(i);
+  });
+
+  // check index functoin
+  function checkIndex() {
+    const pageLength = childrens.children.length;
+    // console.log(i);
+    [...childrens.children].forEach(item => {
+      if(item.dataset.index == i) {
+          item.style.display = '';
+      }else if(i >= pageLength) {
+        item.style.display = 'none';
+        removeGreyBackground();
+        i = 0;
+      }
+      else {
+        console.log(item.dataset);
+        item.style.display = 'none';
+      }
+    })
+  };
+
+  function removeGreyBackground() {
+    setTimeout(function() {
+      $(".greybackground").remove();
+    }, 500);
+  }
+
+</script>
+<script type="module">
+  /* datepicker */ 
+  $(function () {
+    $("#fromDate").datepicker({
+      format: "yyyy-mm-dd",
+      autoclose: true,
+      startDate: "today",
+      todayHighlight: true
+    });
+    $("#toDate").datepicker({
+      format: "yyyy-mm-dd",
+      autoclose: true,
+      startDate: "today",
+    });
+    $("#fromDate").on("changeDate", function (e) {
+      $('#toDate').datepicker('setStartDate', e.date);
+    });
+    $("#toDate").on("changeDate", function (e) {
+      $('#fromDate').datepicker('setEndDate', e.date);
+    });
+});
 </script>
