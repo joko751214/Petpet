@@ -63,9 +63,9 @@ function checkWindowSize() {
 ;
 checkWindowSize();
 /* swiper settings end */
+"use strict";
 
 /* datepicker */
-
 $(function () {
   $("#fromDate").datepicker({
     format: "yyyy-mm-dd",
@@ -85,12 +85,4 @@ $(function () {
     $('#fromDate').datepicker('setEndDate', e.date);
   });
 });
-/* carousel */
-
-$(".carousel--inner a").click(function (e) {
-  e.preventDefault();
-  var src = $(this).find("img").attr('src');
-  $(".carousel--item-actice img").attr('src', src);
-});
-"use strict";
 //# sourceMappingURL=all.js.map
