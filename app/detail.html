@@ -319,8 +319,9 @@ current: detail
 
 <!-- Modal -->
 <div class="reserve-modal container mt-5 py-md-5" id="modal">
+  <!-- page 0 -->
   <div class="row mx-0 bg-white px-3 px-md-6 px-lg-5 py-4 pt-md-6 pb-md-3 pb-lg-5 flex-column flex-lg-row" data-index='0'>
-    <ul class="progress--bar d-flex justify-content-around order-md-1 order-lg-2 col-lg-8">
+    <ul class="progress--bar d-flex justify-content-around order-md-1 col-lg-7">
       <li>
         <p class="active">預約項目</p>
       </li>
@@ -350,25 +351,25 @@ current: detail
       </div>
     </div>
     <ul class="d-flex mb-4 col-lg-8 px-0">
-      <li class="modal-button active">
+      <li class="modal-item active">
         <a href="#" class="modal-link d-block">
           <span class="material-icons">house</span>
           <p>寄宿</p>
         </a>
       </li>
-      <li class="modal-button">
+      <li class="modal-item">
         <a href="#" class="modal-link d-block">
           <span class="material-icons">wash</span>
           <p>美容</p>
         </a>
       </li>
-      <li class="modal-button">
+      <li class="modal-item">
         <a href="#" class="modal-link d-block">
           <span class="material-icons">roofing</span>
           <p>到府保姆</p>
         </a>
       </li>
-      <li class="modal-button">
+      <li class="modal-item">
         <a href="#" class="modal-link d-block">
           <span class="material-icons">directions_walk</span>
           <p>遛狗保姆</p>
@@ -421,28 +422,29 @@ current: detail
         </div>
       </div>
     </form>
-    <div class="col-lg-4 order-md-2 order-lg-3">
-      <div class="col-12 mb-2 d-block d-md-none">
-        <a href="#" class="text-info d-block text-center" id="prev-button">返回</a>
+    <div class="col-lg-4 order-md-2 px-0">
+      <div class="px-0 mb-2 d-block d-md-none">
+        <a href="#" class="text-info d-block text-center prev-button">返回</a>
       </div>
-      <div class="col-12 col-md-5 col-lg-12 offset-md-7 offset-lg-0 mt-md-4 mt-lg-0">
+      <div class="px-0 px-lg-3 col-md-5 col-lg-12 offset-md-7 offset-lg-3 mt-md-4 mt-lg-0">
         <a href="#" class="btn btn-info d-block next-button">下一步</a>
       </div>
     </div>
   </div>
+  <!-- page 1 -->
   <div class="row mx-0 bg-white px-3 px-md-6 px-lg-5 py-4 pt-md-6 pb-md-3 pb-lg-5 flex-column flex-lg-row" data-index='1'>
-    <ul class="progress--bar d-flex justify-content-around order-md-1 order-lg-2 col-lg-8">
+    <ul class="progress--bar d-flex justify-content-around order-md-1 col-lg-7 mb-md-4 mb-lg-0">
       <li>
-        <p class="active">預約項目</p>
+        <p>預約項目</p>
       </li>
       <li>
-        <p>預約資料</p>
+        <p class="active">預約資料</p>
       </li>
       <li>
         <p>付款資訊</p>
       </li>
     </ul>
-    <h2 class="h4 noto-b mb-3 mb-lg-5 text-primary col-lg-8 px-0">預約項目</h2>
+    <h2 class="h4 noto-b mb-3 mb-lg-5 text-primary col-lg-8 px-0">預約資料</h2>
     <div class="px-0 offset-lg-7 col-lg-5 d-flex d-lg-block mb-4 align-items-center position-sm-relative position-absolute pl-lg-6">
       <img src="./assets/images/homestay-3.jpeg" class="modal-image" alt="modal-image">
       <div class="modal--text d-lg-flex flex-wrap mt-lg-3">
@@ -460,91 +462,100 @@ current: detail
         </div>
       </div>
     </div>
-    <ul class="d-flex mb-4 col-lg-8 px-0">
-      <li class="modal-button active">
-        <a href="#" class="modal-link d-block">
-          <span class="material-icons">house</span>
-          <p>寄宿</p>
-        </a>
-      </li>
-      <li class="modal-button">
-        <a href="#" class="modal-link d-block">
-          <span class="material-icons">wash</span>
-          <p>美容</p>
-        </a>
-      </li>
-      <li class="modal-button">
-        <a href="#" class="modal-link d-block">
-          <span class="material-icons">roofing</span>
-          <p>到府保姆</p>
-        </a>
-      </li>
-      <li class="modal-button">
-        <a href="#" class="modal-link d-block">
-          <span class="material-icons">directions_walk</span>
-          <p>遛狗保姆</p>
-        </a>
-      </li>
-    </ul>
-    <form class="col-lg-8 px-0">
-      <h6 class="h6">選擇日期</h6>
-      <div class="row mb-4">
-        <div class='input-group date mb-3 mb-md-0 col-10 col-md-5' id='fromDate'>
-          <input type='text' class="form-control rounded"/>
-          <span class="input-group-addon">
-            <span class="glyphicon glyphicon-calendar"></span>
-          </span>
-        </div>
-        <p>至</p>
-        <div class='input-group date col-10 col-md-5' id='toDate'>
-          <input type='text' class="form-control rounded"/>
-          <span class="input-group-addon">
-            <span class="glyphicon glyphicon-calendar"></span>
-          </span>
-        </div>
-        <p>共1晚</p>
+    <form class="col-md-7 col-lg-6 px-0 mb-md-6">
+      <div class="form-group">
+        <label for="petName">毛孩姓名</label>
+        <input type="text" class="form-control" id="petName" aria-describedby="emailHelp" placeholder="請輸入毛孩姓名">
       </div>
-      <div class="row mb-5 mb-md-7">
-        <div class="col-4 col-md-2 col-lg-3 pr-0 pr-md-3">
-          <h6>毛孩數量</h6>
-          <select class="custom-select" id="detailGroupt01" aria-label="Example select with button addon">
-            <option value="" selected disabled>數量</option>
-            <option value="1">1隻</option>
-            <option value="2">2隻</option>
-            <option value="3">3隻</option>
-          </select>
-        </div>
-        <div class="col-4 col-md-3 col-lg-3 pr-0 pr-md-3">
-          <h6>您的毛孩是</h6>
-          <select class="custom-select" id="detailGroupt02" aria-label="Example select with button addon">
-            <option value="" selected disabled>品種</option>
-            <option value="1">貓</option>
-            <option value="2">狗</option>
-          </select>
-        </div>
-        <div class="col-4 col-md-3 col-lg-3">
-          <h6>年齡</h6>
-          <select class="custom-select" id="detailGroupt03" aria-label="Example select with button addon">
-            <option value="" selected disabled>年齡</option>
-            <option value="1">1~5歲</option>
-            <option value="2">5~10歲</option>
-          </select>
-        </div>
+      <div class="form-group">
+        <label for="name">飼主姓名</label>
+        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="請輸入飼主姓名">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="example@gmail.com">
+      </div>
+      <div class="form-group">
+        <label for="tel"">連絡電話</label>
+        <input type="tel" class="form-control" id="tel"" placeholder="0912-345-678">
       </div>
     </form>
-    <div class="col-lg-4 order-md-2 order-lg-3">
-      <div class="col-12 mb-2 d-block d-md-none">
-        <a href="#" class="text-info d-block text-center" id="prev-button">返回</a>
+    <div class="modal-buttons offset-md-3 offset-lg-1 col-lg-4 order-md-2 d-md-flex d-lg-block align-items-md-center justify-content-center px-0">
+      <div class="col-md-2 col-lg-12 mb-2 px-0">
+        <a href="#" class="text-info d-block text-center prev-button">返回</a>
       </div>
-      <div class="col-12 col-md-5 col-lg-12 offset-md-7 offset-lg-0 mt-md-4 mt-lg-0">
+      <div class="col-md-5 col-lg-12 mt-lg-0 px-0 px-md-3">
         <a href="#" class="btn btn-info d-block next-button">下一步</a>
       </div>
+    </div>
+  </div>
+  <!-- page 2 -->
+  <div class="row mx-0 bg-white px-3 px-md-6 px-lg-5 py-4 pt-md-6 pb-md-3 pb-lg-5 flex-column flex-lg-row" data-index='2'>
+    <ul class="progress--bar d-flex justify-content-around order-md-1 col-lg-7  mb-md-4 mb-lg-0">
+      <li>
+        <p>預約項目</p>
+      </li>
+      <li>
+        <p>預約資料</p>
+      </li>
+      <li>
+        <p class="active">付款資訊</p>
+      </li>
+    </ul>
+    <h2 class="h4 noto-b mb-3 mb-lg-5 text-primary col-lg-8 px-0">付款資訊</h2>
+    <div class="px-0 offset-lg-7 col-lg-5 d-flex d-lg-block mb-4 align-items-center position-sm-relative position-absolute pl-lg-6">
+      <img src="./assets/images/homestay-3.jpeg" class="modal-image" alt="modal-image">
+      <div class="modal--text d-lg-flex flex-wrap mt-lg-3">
+        <h3 class="h5 text-primary mr-lg-3">毛孩好家</h3>
+        <div class="ratings">
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+          <span class="material-icons">star</span>
+        </div>
+        <div class="d-flex align-items-start mt-lg-3">
+          <span class="material-icons mr-2 text-info">place</span>
+          <p class="text-primary">高雄市苓雅區、新興區、前鎮區</p>
+        </div>
+      </div>
+    </div>
+    <form class="col-md-7 col-lg-6 px-0 mb-8 mb-md-12 mb-lg-9">
+      <div class="form-group">
+        <label for="account">信用卡帳號</label>
+        <input type="text" class="form-control" id="account" aria-describedby="emailHelp" placeholder="Xxxx-xxxx-xxxx-xxxx">
+      </div>
+      <div class="form-group">
+        <label for="validate">有效日期</label>
+        <input type="text" class="form-control" id="validate" aria-describedby="emailHelp" placeholder="(MM/YY)">
+      </div>
+      <div class="form-group">
+        <label for="password">安全碼</label>
+        <input type="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="***">
+      </div>
+    </form>
+    <div class="modal-buttons offset-md-3 offset-lg-1 col-lg-4 order-md-2 d-md-flex d-lg-block align-items-md-center justify-content-center px-0">
+      <div class="col-md-2 col-lg-12 mb-2 px-0">
+        <a href="#" class="text-info d-block text-center prev-button">返回</a>
+      </div>
+      <div class="col-md-5 col-lg-12 mt-lg-0 px-0 px-md-3">
+        <a href="#" class="btn btn-info d-block next-button">下一步</a>
+      </div>
+    </div>
+  </div>
+  <!-- page 3 -->
+  <div class="row bg-white px-3 py-11 py-md-12 mx-0" data-index='3'>
+    <div class="col-md-7 col-lg-5 text-center mx-auto px-md-0">
+      <span class="material-icons text-warning mb-3 modal-icon">pets</span>
+      <h2 class="h4 text-primary noto-b mb-3">預約成功</h2>
+      <p class="text-primary mb-3 mb-md-5 text-left text-md-center">您可以在會員頁找到您的預約資料並修改或取消預約。</p>
+      <a href="member.html" class="btn btn-info d-block col-md-10 col-lg-8 mx-md-auto next-button">前往會員頁</a>
     </div>
   </div>
 </div>
 
 <script type="module">
-  /* carousel */
+  /* carousel image transformed */
   $(".carousel--inner a").click(function(e) {
     e.preventDefault();
     const src = $(this).find("img").attr('src');
@@ -552,6 +563,7 @@ current: detail
   });
 
   /* modal */
+
   // page initial value
   var i = 0;
   const modal = $("#modal");
@@ -569,44 +581,50 @@ current: detail
   $("body").on('click', '.greybackground', function() {
     // 關閉modal
     modal.fadeOut('slow');
-    // 刪除灰色背景，不刪除的話一但開啟多次就會重複多了很多行
     removeGreyBackground();
+    i = 0;
   });
 
   // prev button
-  $("#prev-button").click(function(e) {
-    e.preventDefault();
-    modal.fadeOut('slow');
-    removeGreyBackground();
+  $(".prev-button").click(function(e) {
+    if(i == 0) {
+      modal.fadeOut('slow');
+      removeGreyBackground();
+    }else{
+      i -= 1;
+      checkIndex();
+    }
   });
 
   // next button
   $(".next-button").click(function(e) {
-    i+=1;
-    checkIndex()
-    e.preventDefault();
-    console.log(i);
+    i += 1;
+    checkIndex();
   });
 
   // check index functoin
   function checkIndex() {
     const pageLength = childrens.children.length;
-    // console.log(i);
+
+    if(i >= pageLength) {
+      modal.fadeOut('slow');
+      removeGreyBackground();
+      i = 0;
+      return
+    };
+
     [...childrens.children].forEach(item => {
+      
       if(item.dataset.index == i) {
-          item.style.display = '';
-      }else if(i >= pageLength) {
-        item.style.display = 'none';
-        removeGreyBackground();
-        i = 0;
-      }
-      else {
-        console.log(item.dataset);
+        // open page
+        item.style.display = '';
+      }else {
         item.style.display = 'none';
       }
-    })
+    });
   };
 
+  // 刪除灰色背景，不刪除的話一但開啟多次就會重複多了很多行
   function removeGreyBackground() {
     setTimeout(function() {
       $(".greybackground").remove();
