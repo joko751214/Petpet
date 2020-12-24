@@ -361,13 +361,13 @@
   <div class="row mx-0 bg-white px-3 px-md-6 px-lg-5 py-4 pt-md-6 pb-md-3 pb-lg-5 flex-column flex-lg-row" data-index='0'>
     <ul class="progress--bar d-flex justify-content-around order-md-1 col-lg-7">
       <li>
-        <p class="active">預約項目</p>
+        <p data-num='0'>預約項目</p>
       </li>
       <li>
-        <p>預約資料</p>
+        <p data-num='1'>預約資料</p>
       </li>
       <li>
-        <p>付款資訊</p>
+        <p data-num='2'>付款資訊</p>
       </li>
     </ul>
     <h2 class="h4 noto-b mb-3 mb-lg-5 text-primary col-lg-8 px-0">預約項目</h2>
@@ -388,26 +388,26 @@
         </div>
       </div>
     </div>
-    <ul class="d-flex mb-4 col-lg-8 px-0">
-      <li class="modal-item active">
+    <ul class="d-flex mb-4 col-lg-8 px-0" id="modal-item">
+      <li class="modal-list">
         <a href="#" class="modal-link d-block">
           <span class="material-icons">house</span>
           <p>寄宿</p>
         </a>
       </li>
-      <li class="modal-item">
+      <li class="modal-list">
         <a href="#" class="modal-link d-block">
           <span class="material-icons">wash</span>
           <p>美容</p>
         </a>
       </li>
-      <li class="modal-item">
+      <li class="modal-list">
         <a href="#" class="modal-link d-block">
           <span class="material-icons">roofing</span>
           <p>到府保姆</p>
         </a>
       </li>
-      <li class="modal-item">
+      <li class="modal-list">
         <a href="#" class="modal-link d-block">
           <span class="material-icons">directions_walk</span>
           <p>遛狗保姆</p>
@@ -473,13 +473,13 @@
   <div class="row mx-0 bg-white px-3 px-md-6 px-lg-5 py-4 pt-md-6 pb-md-3 pb-lg-5 flex-column flex-lg-row" data-index='1'>
     <ul class="progress--bar d-flex justify-content-around order-md-1 col-lg-7 mb-md-4 mb-lg-0">
       <li>
-        <p>預約項目</p>
+        <p data-num='0'>預約項目</p>
       </li>
       <li>
-        <p class="active">預約資料</p>
+        <p class="active" data-num='1'>預約資料</p>
       </li>
       <li>
-        <p>付款資訊</p>
+        <p data-num='2'>付款資訊</p>
       </li>
     </ul>
     <h2 class="h4 noto-b mb-3 mb-lg-5 text-primary col-lg-8 px-0">預約資料</h2>
@@ -531,13 +531,13 @@
   <div class="row mx-0 bg-white px-3 px-md-6 px-lg-5 py-4 pt-md-6 pb-md-3 pb-lg-5 flex-column flex-lg-row" data-index='2'>
     <ul class="progress--bar d-flex justify-content-around order-md-1 col-lg-7  mb-md-4 mb-lg-0">
       <li>
-        <p>預約項目</p>
+        <p data-num='0'>預約項目</p>
       </li>
       <li>
-        <p>預約資料</p>
+        <p data-num='1'>預約資料</p>
       </li>
       <li>
-        <p class="active">付款資訊</p>
+        <p class="active" data-num='2'>付款資訊</p>
       </li>
     </ul>
     <h2 class="h4 noto-b mb-3 mb-lg-5 text-primary col-lg-8 px-0">付款資訊</h2>
@@ -606,7 +606,9 @@
   var i = 0;
   const modal = $("#modal");
   const childrens = modal[0];
+  const progress = [...$(".progress--bar")];
 
+  // modal popup settings
   $("#modal-btn").click(function(e) {
     e.preventDefault();
     // 在body裡面加入灰色背景
@@ -621,6 +623,11 @@
     modal.fadeOut('slow');
     removeGreyBackground();
     i = 0;
+  });
+
+  // modal add active attribute
+  $("#modal-item .modal-list").click(function() {
+    $(this).toggleClass('active');
   });
 
   // prev button
@@ -643,7 +650,7 @@
   // check index functoin
   function checkIndex() {
     const pageLength = childrens.children.length;
-
+    
     if(i >= pageLength) {
       modal.fadeOut('slow');
       removeGreyBackground();
@@ -656,6 +663,15 @@
       if(item.dataset.index == i) {
         // open page
         item.style.display = '';
+        progress.forEach(list => {
+          [...list.children].forEach(obj => {
+            if(obj.children[0].dataset.num == i) {
+              obj.children[0].classList.add('active');
+            }else {
+              obj.children[0].classList.remove('active');
+            }
+          })
+        });
       }else {
         item.style.display = 'none';
       }
