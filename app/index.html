@@ -5,34 +5,38 @@ engine: ejs
 current: index
 ---
 
-<div class="banner w-100-md">
-  <div class="banner-image mb-2 mb-md-4">
-    <img src="./assets/images/index-1.png" class="img-fluid" alt="banner-image">
-  </div>
-  <div class="banner-info">
-    <h2 class="noto-b h3-xl h2-md h1-lg mb-1 mb-md-2">寵物服務，盡在 PETPET</h2>
-    <p class="noto-b h5-m h4-lg mb-3 mb-md-4">當您的毛孩有需要時，<br>幫您找到最合適的服務者！</p>
-    <div class="banner-buttons">
-      <select class="custom-select mb-3" id="inputGroupSelect01" aria-label="Example select with button addon">
-        <option value="" selected disabled>品種</option>
-        <option value="1">狗</option>
-        <option value="2">貓</option>
-      </select>
-      <select class="custom-select mb-3" id="inputGroupSelect02" aria-label="Example select with button addon">
-        <option value="" selected disabled>服務</option>
-        <option value="1">寵物寄宿</option>
-        <option value="2">寵物美容</option>
-        <option value="3">到府照顧</option>
-        <option value="4">溜狗保母</option>
-        <option value="5">行為訓練</option>
-      </select>
-      <select class="custom-select mb-3" id="inputGroupSelect03" aria-label="Example select with button addon">
-        <option value="" selected disabled>地區</option>
-        <option value="1">台北市</option>
-        <option value="2">新北市</option>
-        <option value="3">高雄市</option>
-      </select>
-      <button class="btn btn-info w-100 mb-3" type="button">搜尋</button>
+<div class="banner container">
+  <div class="row align-items-center flex-md-column flex-lg-row">
+    <div class="banner-image mb-2 mb-md-4 col-md-5">
+      <img src="./assets/images/index-1.png" class="img-fluid" alt="banner-image">
+    </div>
+    <div class="banner-info col-md-7">
+      <div class="container">
+        <h2 class="noto-b h3-xl h2-md h1-lg mb-1 mb-md-2">寵物服務，盡在 PETPET</h2>
+        <p class="noto-b h5-m h4-lg mb-3 mb-md-4">當您的毛孩有需要時，<br>幫您找到最合適的服務者！</p>
+        <div class="banner-buttons">
+          <select class="custom-select mb-3" id="inputGroupSelect01" aria-label="Example select with button addon">
+            <option value="" selected disabled>品種</option>
+            <option value="1">狗</option>
+            <option value="2">貓</option>
+          </select>
+          <select class="custom-select mb-3" id="inputGroupSelect02" aria-label="Example select with button addon">
+            <option value="" selected disabled>服務</option>
+            <option value="1">寵物寄宿</option>
+            <option value="2">寵物美容</option>
+            <option value="3">到府照顧</option>
+            <option value="4">溜狗保母</option>
+            <option value="5">行為訓練</option>
+          </select>
+          <select class="custom-select mb-3" id="inputGroupSelect03" aria-label="Example select with button addon">
+            <option value="" selected disabled>地區</option>
+            <option value="1">台北市</option>
+            <option value="2">新北市</option>
+            <option value="3">高雄市</option>
+          </select>
+          <button class="btn btn-info w-100 mb-3" type="button">搜尋</button>
+        </div>
+      </div>
     </div>
     <a href="#popular">
       <span class="banner-arrow material-icons bg-info text-white rounded-circle d-none d-md-inline-block">arrow_drop_down</span>
@@ -132,19 +136,19 @@ current: index
     </li>
   </ul>
 </div>
-<div class="jumbotron jumbotron-fluid pt-6 pt-md-7 pb-5 pb-md-9 mb-0 bg-cover">
+<div class="jumbotron jumbotron-fluid pt-6 pt-md-7 pb-9 mb-0 bg-cover">
   <div class="container text-white">
-    <h2 class="mb-8 h1">PETPET目前已有</h2>
-    <ul class="d-flex flex-column flex-md-row align-items-center">
-      <li class="px-3 pb-3 pb-md-7 border-left border-white mr-0 mr-md-9 mb-7 mb-md-0">
+    <h2 class="mb-8 h1 text-center text-md-left">PETPET目前已有</h2>
+    <ul class="row flex-column flex-md-row">
+      <li class="col-lg-3 col-md-4 col-6 border-left pb-md-8 mb-7 mb-md-0 mx-auto">
         <h3 class="noto-b h1 lh-9">5278</h3>
         <p class="noto-m h5">人使用 PETPET</p>
       </li>
-      <li class="px-3 pb-3 pb-md-7 border-left border-white mr-0 mr-md-9 mb-7 mb-md-0">
+      <li class="col-lg-3 col-md-4 col-6 border-left pb-md-8 mb-7 mb-md-0 mx-auto">
         <h3 class="noto-b h1 lh-9">580</h3>
         <p class="noto-m h5">人成為寵物保母</p>
       </li>
-      <li class="px-3 pb-3 pb-md-7 border-left border-white mr-0 mr-md-9 mb-7 mb-md-0">
+      <li class="col-lg-3 col-md-4 col-6 border-left pb-md-8 mx-auto">
         <h3 class="noto-b h1 lh-9">10000+</h3>
         <p class="noto-m h5">已完成服務</p>
       </li>
